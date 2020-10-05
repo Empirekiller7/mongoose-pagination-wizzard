@@ -141,6 +141,7 @@ Model.paginate({}, options, function (err, result) {
 ```
 
 ### Search Fields
+
 Filter your model's fields by value. Since it uses the <b>$regex</b> operator, it currently only suports search for string value fields.
 ```javascript
  var const = {
@@ -158,9 +159,13 @@ Filter your model's fields by value. Since it uses the <b>$regex</b> operator, i
 });
 ```
 ### Sorting
+
 Provide the 'sort' property with the values 1 for ascending, or -1 for descending order sorting.
+
 ### Column Sorting
-Filter your model's fields by columns, provivind the type of sorting ('asc' or 'desc'). You <b>MUST</b> provide both the <b>columns</b> and <b>order</b>  properties. This is very useful for datatable support-
+
+Filter your model's fields by columns, provivind the type of sorting ('asc' or 'desc'). You <b>MUST</b> provide both the <b>columns</b> and <b>order</b>  properties. This is very useful for datatable support.
+
 ```javascript
  var const = {
       limit: 10,
