@@ -1,5 +1,5 @@
 {
-	"name": "mongoose-pagination-wizzard",
+	"name": "mongoose-pagination-wizard",
 	"version": "1.0.0",
 	"description": "A cursor based custom pagination library for Mongoose with customizable labels plus sorting and search options. Perfect for datatable pagination",
 	"main": "dist/index.js",
@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Empirekiller7/mongoose-pagination-wizzard"
+		"url": "git+https://github.com/Empirekiller7/mongoose-pagination-wizard"
 	},
 	"keywords": [
 		"mongoose",
@@ -33,9 +33,9 @@
 	"contributors": [],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/Empirekiller7/mongoose-pagination-wizzard/issues"
+		"url": "https://github.com/Empirekiller7/mongoose-pagination-wizard/issues"
 	},
-	"homepage": "https://github.com/Empirekiller7/mongoose-pagination-wizzard#readme",
+	"homepage": "https://github.com/Empirekiller7/mongoose-pagination-wizard#readme",
 	"dependencies": {},
 	"devDependencies": {
 		"@babel/cli": "^7.4.3",

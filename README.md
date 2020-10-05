@@ -1,9 +1,9 @@
-# mongoose-pagination-wizzard
+# mongoose-pagination-wizard
 
-[![npm version](https://img.shields.io/npm/v/mongoose-pagination-wizzard.svg)](https://www.npmjs.com/package/mongoose-pagination-wizzard)
-[![Build Status](https://travis-ci.org/Empirekiller7/mongoose-pagination-wizzard.svg?branch=master)](https://travis-ci.org/Empirekiller7/mongoose-pagination-wizzard)
-[![Dependency Status](https://david-dm.org/Empirekiller7/mongoose-pagination-wizzard.svg)](https://david-dm.org/Empirekiller7/mongoose-pagination-wizzard)
-[![devDependencies Status](https://david-dm.org/Empirekiller7/mongoose-pagination-wizzard/dev-status.svg)](https://david-dm.org/Empirekiller7/mongoose-pagination-wizzard?type=dev)
+[![npm version](https://img.shields.io/npm/v/mongoose-pagination-wizard.svg)](https://www.npmjs.com/package/mongoose-pagination-wizard)
+[![Build Status](https://travis-ci.org/Empirekiller7/mongoose-pagination-wizard.svg?branch=master)](https://travis-ci.org/Empirekiller7/mongoose-pagination-wizard)
+[![Dependency Status](https://david-dm.org/Empirekiller7/mongoose-pagination-wizard.svg)](https://david-dm.org/Empirekiller7/mongoose-pagination-wizard)
+[![devDependencies Status](https://david-dm.org/Empirekiller7/mongoose-pagination-wizard/dev-status.svg)](https://david-dm.org/Empirekiller7/mongoose-pagination-wizard?type=dev)
 
 > A cursor based custom pagination library for [Mongoose](http://mongoosejs.com) with customizable labels.
 
@@ -14,13 +14,13 @@
 >All deserved credits go to Aravind NC (aravindc) (https://aravindnc.com) and the contribuitors of his library, and also to Antonio Sandoval (archr).
 <br>
 
-[![NPM](https://nodei.co/npm/mongoose-pagination-wizzard.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mongoose-pagination-wizzard)
+[![NPM](https://nodei.co/npm/mongoose-pagination-wizard.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mongoose-pagination-wizard)
 
 If you are looking for aggregate query pagination, use this one [mongoose-aggregate-paginate-v2](https://github.com/aravindnc/mongoose-aggregate-paginate-v2)
 
 ## Why This Plugin
 
-mongoose-pagination-wizzard is a cursor based pagination library (based on [mongoose-paginate-v2](https://github.com/aravindnc/mongoose-paginate-v2)) having a page wrapper. The plugin can be used as both page as well as cusror based pagination. The main usage of the plugin is you can alter the return value keys directly in the query itself so that you don't need any extra code for transformation.
+mongoose-pagination-wizard is a cursor based pagination library (based on [mongoose-paginate-v2](https://github.com/aravindnc/mongoose-paginate-v2)) having a page wrapper. The plugin can be used as both page as well as cusror based pagination. The main usage of the plugin is you can alter the return value keys directly in the query itself so that you don't need any extra code for transformation.
 
 This version of the library adds the search field and column sorting features from [mongoose-datatables](https://github.com/archr/mongoose-datatables).
 
@@ -29,7 +29,7 @@ The below documentation is not perfect. Feel free to contribute. :)
 ## Installation
 
 ```sh
-npm install mongoose-pagination-wizzard
+npm install mongoose-pagination-wizard
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ Add plugin to a schema and then use model `paginate` method:
 
 ```js
 const mongoose = require("mongoose");
-const mongoosePaginate = require("mongoose-pagination-wizzard");
+const mongoosePaginate = require("mongoose-pagination-wizard");
 
 const mySchema = new mongoose.Schema({
   /* your schema definition */
@@ -302,7 +302,7 @@ Model.paginate({}, { limit: 0 }).then(function (result) {
 config.js:
 
 ```javascript
-var mongoosePaginate = require("mongoose-pagination-wizzard");
+var mongoosePaginate = require("mongoose-pagination-wizard");
 
 mongoosePaginate.paginate.options = {
   lean: true,
