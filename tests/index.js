@@ -247,47 +247,6 @@ describe('mongoose-paginate', function () {
     });
   });
 
-/*
-
-   it('test sort by column desc and search', function() {
-    var query = {
-     
-    };
-
-    var options = {
-      limit: 10,
-      page: 1,
-      lean: true,
-      columns: [
-         { data: 'price' }
-      ],
-      order: [
-        {
-          column: 0,
-          dir: 'desc'
-        }
-      ],
-      search: {
-        value: 57,
-        fields: ['price']
-     }
-    };
-
-      return Book.paginate(query, options).then(result => {
-      expect(result.docs[0].price).to.equal(576)
-      expect(result.totalDocs).to.equal(100);
-      expect(result.limit).to.equal(10);
-      expect(result.page).to.equal(1);
-      expect(result.pagingCounter).to.equal(1);
-      expect(result.hasPrevPage).to.equal(false);
-      expect(result.hasNextPage).to.equal(true);
-      expect(result.prevPage).to.equal(null);
-      expect(result.nextPage).to.equal(2);
-      expect(result.totalPages).to.equal(10);
-    });
-  });
-*/
-
 
   it('last page with page and limit', function() {
     var query = {
@@ -412,10 +371,10 @@ describe('mongoose-paginate', function () {
     });
   });
 
-  /*
+  
   it('with $where condition', function () {
     var query = {
-      '$where': 'this.price < 100'
+      price: { $lt: 100 } 
     };
 
     var options = {
@@ -439,7 +398,7 @@ describe('mongoose-paginate', function () {
       expect(result.totalPages).to.equal(2);
     });
   });
-  */
+  
 
   it('with empty custom labels', function () {
     var query = {
