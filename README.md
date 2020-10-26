@@ -71,27 +71,18 @@ Returns promise
   - `[limit=10]` {Number}
   - `[customLabels]` {Object} - Developers can provide custom labels for manipulating the response data.
   - `[pagination]` {Boolean} - If `pagination` is set to false, it will return all docs without adding limit condition. (Default: True)
+  - `[search]` {Object} - Determines a value and fields to search for. 
+    - `[value]` {string}: value to search for.
+    - `[fields]` {Array[string]}: specified fields to search for 
+  - `[columns]` {Array} - Defines the which column (fields) we are ordering for.
+  - `[order]` {Array} - Defines the to way to order a specific column as ascending or descending.
   - `[forceCountFn]` {Boolean} - Set this to true, if you need to support \$geo queries.
   - `[read]` {Object} - Determines the MongoDB nodes from which to read. Below are the available options.
     - `[pref]`: One of the listed preference options or aliases.
     - `[tags]`: Optional tags for this query. (Must be used with `[pref]`)
   - `[options]` {Object} - Options passed to Mongoose's `find()` function. [Documentation](https://mongoosejs.com/docs/api.html#query_Query-setOptions)
   <br>
-    - <b>Suported Options</b>:
-      - collation
-      - lean
-      - leanWithId
-      - populate
-      - projection
-      - read
-      - select
-      - sort
-      - pagination
-      - search
-      - order
-      - columns
-      - forceCountFn
-  <br>
+
 - `[callback(err, result)]` - If specified, the callback is called once pagination results are retrieved or when an error has occurred
 
 **Return value**

@@ -1,6 +1,6 @@
 {
 	"name": "mongoose-pagination-wizard",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A cursor based custom pagination library for Mongoose with customizable labels plus sorting and search options. Perfect for datatable pagination",
 	"main": "dist/index.js",
 	"scripts": {
